@@ -3,56 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exhibition E-Brochure</title>
+    <title>The Shape Of Feeling | Exhibition Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #050505; color: #ffffff; font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap');
+        body { background-color: #0a0a0a; color: #f4f4f4; font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .artist-gradient { background: linear-gradient(180deg, rgba(10,10,10,0) 0%, rgba(10,10,10,1) 100%); }
+        /* Hide scrollbar but allow scrolling */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
     </style>
 </head>
 <body class="pb-20">
 
-    <header class="p-8 text-center border-b border-zinc-800">
-        <h1 class="text-4xl font-light tracking-widest uppercase" The Shape Of Feeling
-        <p class="text-zinc-500 mt-2">Interactive Exhibition Guide</p>
+    <header class="pt-16 pb-12 px-8 text-center bg-zinc-900/30">
+        <h1 class="text-3xl font-light tracking-[0.2em] uppercase mb-2">The Shape Of Feeling</h1>
+        <p class="text-zinc-500 text-sm tracking-widest uppercase mb-6">Fine Art Exhibition</p>
+        <div class="h-[1px] w-12 bg-zinc-700 mx-auto mb-6"></div>
+        <p class="text-zinc-400 max-w-sm mx-auto text-sm leading-relaxed">
+            Welcome to our exhibition. Use this guide to navigate our show, learn more about each artist, and see behind the scenes of select artworks.
+        </p>
+        <p class="text-xs text-zinc-600 mt-4 uppercase tracking-widest">April 11th — May 2nd, 2026</p>
     </header>
 
-    <section class="p-6">
-        <h2 class="text-xl font-semibold mb-6 border-l-4 border-white pl-4">Featured Artists</h2>
-        
-        <div class="glass rounded-2xl overflow-hidden mb-8">
-            <img src="https://via.placeholder.com/600x400" alt="Artist Name" class="w-full h-48 object-cover">
-            <div class="p-6">
-                <h3 class="text-2xl font-medium" Ariann Aleah
-                <p class="text-zinc-400 text-sm italic mb-4">Sculpture & Installation</p>
-                <p class="text-zinc-300 text-sm leading-relaxed mb-6">
-                    Write the artist's biography here. Mention their inspiration, background, and what they hope to achieve with their work.
-                </p>
-                <div class="flex space-x-4">
-                    <a href="#" class="text-sm border-b border-white pb-1">Website</a>
-                    <a href="#" class="text-sm border-b border-white pb-1">Instagram</a>
+    <nav class="sticky top-0 z-50 glass py-4 px-6 mb-8 flex gap-6 overflow-x-auto whitespace-nowrap no-scrollbar">
+        <a href="#alisha" class="text-[10px] uppercase tracking-widest font-semibold text-zinc-400 hover:text-white transition">Alisha Smith</a>
+        <a href="#arianna" class="text-[10px] uppercase tracking-widest font-semibold text-zinc-400 hover:text-white transition">Arianna Aleah</a>
+        <a href="#jamila" class="text-[10px] uppercase tracking-widest font-semibold text-zinc-400 hover:text-white transition">Jamila Greaves</a>
+        <a href="#kesia" class="text-[10px] uppercase tracking-widest font-semibold text-zinc-400 hover:text-white transition">King Kesia</a>
+    </nav>
+
+    <main class="px-6 space-y-24">
+
+        <section id="alisha" class="scroll-mt-24">
+            <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5] bg-zinc-800">
+                <div class="absolute inset-0 artist-gradient"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h2 class="text-3xl font-semibold">Alisha Smith</h2>
+                    <p class="text-zinc-400 text-sm italic">‘The Colourist’</p>
                 </div>
             </div>
-        </div>
-        
+            <p class="text-zinc-300 leading-relaxed text-sm mb-6">
+                Alisha Smith, known as The Colourist, is a self-taught Barbadian artist and creative entrepreneur, specializing in realistic portraiture, expressive depictions of local landscapes and more recently, still lifes.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://www.thecolouristart.com/" target="_blank" class="text-xs border-b border-zinc-700 pb-1">Website</a>
+                <a href="https://www.instagram.com/alishasmith.thecolouristart/" target="_blank" class="text-xs border-b border-zinc-700 pb-1">Instagram</a>
+            </div>
         </section>
 
-    <section class="p-6 bg-zinc-900/50">
-        <h2 class="text-xl font-semibold mb-6 border-l-4 border-white pl-4">The Collection</h2>
-        
-        <div class="mb-10">
-            <div class="flex justify-between items-end mb-2">
-                <div>
-                    <h4 class="text-lg font-medium">"Midnight Echo"</h4>
-                    <p class="text-zinc-500 text-xs uppercase tracking-tighter">Oil on Canvas, 2026</p>
+        <section id="arianna" class="scroll-mt-24">
+            <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5] bg-zinc-800">
+                <div class="absolute inset-0 artist-gradient"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h2 class="text-3xl font-semibold">Arianna Aleah</h2>
+                    <p class="text-zinc-400 text-sm italic">Abstract Realism</p>
                 </div>
             </div>
-            
-            <div class="relative group rounded-xl overflow-hidden aspect-video bg-zinc-800 flex items-center justify-center">
-                <p class="text-zinc-500 text-sm">Progress Video/Photos Loop</p> 
+            <p class="text-zinc-300 leading-relaxed text-sm mb-6">
+                Arianna Aleah Holligan is a 22 year-old Barbadian artist defined by Abstract Realism. Deeply inspired by femininity and the natural world, her paintings reflect personal and cultural narratives of quiet strength.
+            </p>
+            <div class="flex gap-4 mb-12">
+                <a href="https://www.ariannaaleahart.com/" target="_blank" class="text-xs border-b border-zinc-700 pb-1">Website</a>
+                <a href="https://www.instagram.com/ariannaaleahart/" target="_blank" class="text-xs border-b border-zinc-700 pb-1">Instagram</a>
             </div>
-        </div>
-    </section>
+
+            <div class="space-y-8">
+                <h3 class="text-[10px] uppercase tracking-[0.3em] text-zinc-600 mb-6">Featured Collections</h3>
+                
+                <div id="weather-pink" class="glass p-5 rounded-2xl">
+                    <h4 class="text-lg font-medium">The Weather Is Pink</h4>
+                    <p class="text-xs text-zinc-500 mb-4">Acrylic and Pearls on canvas</p>
+                    <div class="aspect-video bg-zinc-900 rounded-lg flex items-center justify-center border border-zinc-800">
+                        <p class="text-[10px] text-zinc-600 uppercase tracking-widest">Process: Video (35s) + 2 Images</p>
+                    </div>
+                </div>
+
+                <div id="oracle" class="glass p-5 rounded-2xl">
+                    <h4 class="text-lg font-medium">The Oracle</h4>
+                    <p class="text-xs text-zinc-500 mb-4">Acrylic on canvas</p>
+                    <div class="aspect-video bg-zinc-900 rounded-lg flex items-center justify-center border border-zinc-800">
+                        <p class="text-[10px] text-zinc-600 uppercase tracking-widest">Process: 1 Minute Full Video</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jamila" class="scroll-mt-24">
+            <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5] bg-zinc-800">
+                <div class="absolute inset-0 artist-gradient"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h2 class="text-3xl font-semibold">Jamila Greaves</h2>
+                    <p class="text-zinc-400 text-sm italic">Acrylic & Abstract Expression</p>
+                </div>
+            </div>
+            <p class="text-zinc-300 leading-relaxed text-sm mb-6">
+                Jamila Greaves (b.2001) depicts imaginative scenes of her inner world of feelings and emotions. A graduate of Barbados Community College, she explores expression and motion through vibrant colors.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://www.instagram.com/starheaart/" target="_blank" class="text-xs border-b border-zinc-700 pb-1">Instagram</a>
+            </div>
+        </section>
+
+        <section id="kesia" class="scroll-mt-24">
+            <div class="relative rounded-2xl overflow-hidden mb-6 aspect-[4/5] bg-zinc-800">
+                <div class="absolute inset-0 artist-gradient"></div>
+                <div class="absolute bottom-6 left-6">
+                    <h2 class="text-3xl font-semibold">King Kesia</h2>
+                    <p class="text-zinc-400 text-sm italic">Visual Artist & Fashion Designer</p>
+                </div>
+            </div>
+            <p class="text-zinc-300 leading-relaxed text-sm mb-6">
+                Kesia Estwick, known as King Kesia, expertly weaves nature and the multifacetedness of the African diaspora into her works with naturally derived elements in two and three-dimensional form.
+            </p>
+            <div class="flex gap-4">
+                <a href="https://www.instagram.com/kingkesia.art/" target="_blank" class="text-xs border-b border-zinc-700 pb-1">Instagram</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="mt-32 p-12 text-center border-t border-zinc-900">
+        <p class="text-zinc-600 text-[9px] uppercase tracking-[0.3em]">© 2026 The Shape Of Feeling</p>
+    </footer>
 
 </body>
 </html>
